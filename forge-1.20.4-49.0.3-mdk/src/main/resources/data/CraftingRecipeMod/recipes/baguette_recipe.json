@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+        "###",
+        "@$@",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "bread"
+        },
+        "@": {
+            "item": "kelp"
+        },
+        "$": {
+            "item": "cooked_beef"
+        }
+    },
+    "result":{
+        "item": "crafting_recipe_mod:baguette",
+        "count": 1
+    }
+}
