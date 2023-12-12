@@ -1,7 +1,17 @@
 {
     "variants":{
-        "":{
-            "model":"crafting_recipe_mod:block/powereddispencer"
-        }
+        "facing=north,triggered=false":{ "model": "crafting_recipe_mod:block/powereddispencer"},
+        "facing=east,triggered=false":{ "model": "crafting_recipe_mod:block/powereddispencer", "y": 90},
+        "facing=south,triggered=false":{ "model": "crafting_recipe_mod:block/powereddispencer", "y": 180},
+        "facing=west,triggered=false":{ "model": "crafting_recipe_mod:block/powereddispencer", "y": 270},
+        "facing=north,triggered=true":{ "model": "crafting_recipe_mod:block/powereddispencer"},
+        "facing=east,triggered=true":{ "model": "crafting_recipe_mod:block/powereddispencer", "y": 90},
+        "facing=south,triggered=true":{ "model": "crafting_recipe_mod:block/powereddispencer", "y": 180},
+        "facing=west,triggered=true":{ "model": "crafting_recipe_mod:block/powereddispencer", "y": 270},
+        "facing=up,triggered=true":{"model": "crafting_recipe_mod:block/powereddispencerup"},
+        "facing=down,triggered=true":{"model": "crafting_recipe_mod:block/powereddispencerbottom"},
+        "facing=up,triggered=false":{"model": "crafting_recipe_mod:block/powereddispencerup"},
+        "facing=down,triggered=false":{"model": "crafting_recipe_mod:block/powereddispencerbottom"}
+
     }
 }

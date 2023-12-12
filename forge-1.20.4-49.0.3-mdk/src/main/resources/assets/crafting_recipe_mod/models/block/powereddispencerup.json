@@ -1,8 +1,8 @@
 {
     "parent": "block/furnace",
     "textures": {
-        "front":"crafting_recipe_mod:block/dispenser_front_horizontal",
-        "top":"crafting_recipe_mod:block/furnace_top",
+        "front":"crafting_recipe_mod:block/furnace_side",
+        "top":"crafting_recipe_mod:block/dispenser_front_vertical",
         "bottom": "crafting_recipe_mod:block/furnace_top",
         "side":"crafting_recipe_mod:block/furnace_side"
     }
