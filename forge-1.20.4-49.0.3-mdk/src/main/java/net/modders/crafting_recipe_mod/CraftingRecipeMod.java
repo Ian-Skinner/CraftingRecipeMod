@@ -59,6 +59,9 @@ public class CraftingRecipeMod
         if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
             event.accept(ModItems.BAGUETTE);
         }
+        if(event.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS) {
+            event.accept(ModBlocks.powereddispencer);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

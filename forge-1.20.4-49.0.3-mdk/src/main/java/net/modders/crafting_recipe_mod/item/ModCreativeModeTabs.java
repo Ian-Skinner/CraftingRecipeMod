@@ -18,6 +18,7 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.crafting_recipe_mod"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.BAGUETTE.get());
+                        pOutput.accept(ModItems.powereddispencer.get());
                     })
                     .build());
 
