@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "group": "misc",
+    "ingredients": [
+      {
+        "item": "minecraft:cactus"
+      },
+      {
+        "item": "minecraft:snowball"
+      }
+    ],
+    "result": {
+      "item": "crafting_recipe_mod:spikeysnowballitem"
+    }
+}
+  
+
+

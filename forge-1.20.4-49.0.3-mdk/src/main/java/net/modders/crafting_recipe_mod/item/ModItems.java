@@ -28,7 +28,7 @@ public class ModItems {
             new Item.Properties()
         ));
 
-    public static final RegistryObject<Item> SPIKEYSNOWBALLITEM = ITEMS.register("SpikeySnowballItem", 
+    public static final RegistryObject<Item> SPIKEYSNOWBALLITEM = ITEMS.register("spikeysnowballitem", 
         () -> new SpikeySnowballitem(new Item.Properties()));
     
 }

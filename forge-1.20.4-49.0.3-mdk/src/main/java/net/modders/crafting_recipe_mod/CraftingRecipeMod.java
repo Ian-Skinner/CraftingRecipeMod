@@ -40,6 +40,7 @@ public class CraftingRecipeMod
 
         ModItems.register(modEventBus);
         ModBlocks.BLOCKS.register(modEventBus);
+        ModEntities.ENTITY_TYPE.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
@@ -49,6 +50,7 @@ public class CraftingRecipeMod
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
+
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
@@ -64,6 +66,9 @@ public class CraftingRecipeMod
         }
         if(event.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS) {
             event.accept(ModBlocks.powereddispencer);
+        }
+        if(event.getTabKey() == CreativeModeTabs.COMBAT) {
+            event.accept(ModItems.SPIKEYSNOWBALLITEM);
         }
     }
 
@@ -81,7 +86,7 @@ public class CraftingRecipeMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-           EntityRenderers.register(ModEntities.spikeysnow.get(), ThrownItemRenderer::new);
+            EntityRenderers.register(ModEntities.SPIKEYSNOWBALL.get(), ThrownItemRenderer::new);
         }
     }
 }
