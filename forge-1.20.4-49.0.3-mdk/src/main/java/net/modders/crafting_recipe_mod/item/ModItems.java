@@ -30,5 +30,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> SPIKEYSNOWBALLITEM = ITEMS.register("spikeysnowballitem", 
         () -> new SpikeySnowballitem(new Item.Properties()));
+
+    public static final RegistryObject<Item> DOUBLEBOW = ITEMS.register("doublebow", 
+        () -> new DoubleBow(new Item.Properties()));
     
 }

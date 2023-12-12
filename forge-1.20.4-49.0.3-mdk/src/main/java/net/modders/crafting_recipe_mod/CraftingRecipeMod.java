@@ -70,6 +70,9 @@ public class CraftingRecipeMod
         if(event.getTabKey() == CreativeModeTabs.COMBAT) {
             event.accept(ModItems.SPIKEYSNOWBALLITEM);
         }
+        if(event.getTabKey() == CreativeModeTabs.COMBAT) {
+            event.accept(ModItems.DOUBLEBOW);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

@@ -11,8 +11,6 @@ import com.mojang.logging.LogUtils;
 
 
 public class powereddispencer extends DispenserBlock {
-    private static final Logger LOGGER = LogUtils.getLogger();
-
 
     public powereddispencer(Properties properties) {
         super(properties);

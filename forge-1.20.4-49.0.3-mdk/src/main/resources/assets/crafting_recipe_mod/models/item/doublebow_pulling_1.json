@@ -1,0 +1,6 @@
+{
+  "parent": "item/bow",
+  "textures": {
+    "layer0": "crafting_recipe_mod:item/bow_pulling_1"
+  }
+}
