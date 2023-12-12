@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+        " # ",
+        "#$#",
+        " # "
+    ],
+    "key": {
+        "#": {
+            "item": "redstone"
+        },
+        "$": {
+            "item": "dispenser"
+        }
+    },
+    "result":{
+        "item": "crafting_recipe_mod:powereddispencer",
+        "count":1
+    }
+}
