@@ -27,4 +27,8 @@ public class ModItems {
         () -> new BlockItem(ModBlocks.powereddispencer.get(), 
             new Item.Properties()
         ));
+
+    public static final RegistryObject<Item> SPIKEYSNOWBALLITEM = ITEMS.register("SpikeySnowballItem", 
+        () -> new SpikeySnowballitem(new Item.Properties()));
+    
 }

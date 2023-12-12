@@ -1,4 +1,5 @@
 {
     "item.crafting_recipe_mod.baguette": "Baguette",
-    "block.crafting_recipe_mod.powereddispencer" : "Powered Dispencer"
+    "block.crafting_recipe_mod.powereddispencer" : "Powered Dispencer",
+    "item.crafting_recipe_mod.spikeysnowballitem": "Spikey Snowball"
 }

@@ -2,6 +2,8 @@ package net.modders.crafting_recipe_mod;
 
 import com.mojang.logging.LogUtils;
 
+import net.minecraft.client.renderer.entity.EntityRenderers;
+import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Blocks;
 
@@ -17,6 +19,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.modders.crafting_recipe_mod.block.ModBlocks;
+import net.modders.crafting_recipe_mod.entities.ModEntities;
 import net.modders.crafting_recipe_mod.item.ModCreativeModeTabs;
 import net.modders.crafting_recipe_mod.item.ModItems;
 
@@ -75,7 +78,7 @@ public class CraftingRecipeMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-           
+           EntityRenderers.register(ModEntities.spikeysnow.get(), ThrownItemRenderer::new);
         }
     }
 }
