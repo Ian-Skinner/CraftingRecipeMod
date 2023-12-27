@@ -22,6 +22,7 @@ import net.modders.crafting_recipe_mod.block.ModBlocks;
 import net.modders.crafting_recipe_mod.entities.ModEntities;
 import net.modders.crafting_recipe_mod.item.ModCreativeModeTabs;
 import net.modders.crafting_recipe_mod.item.ModItems;
+import net.modders.crafting_recipe_mod.item.ModPotions;
 
 import org.slf4j.Logger;
 
@@ -42,6 +43,7 @@ public class CraftingRecipeMod
         ModBlocks.BLOCKS.register(modEventBus);
         ModEntities.ENTITY_TYPE.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
+        ModPotions.POTIONS.register(modEventBus);
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
@@ -73,6 +75,7 @@ public class CraftingRecipeMod
         if(event.getTabKey() == CreativeModeTabs.COMBAT) {
             event.accept(ModItems.DOUBLEBOW);
         }
+
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
